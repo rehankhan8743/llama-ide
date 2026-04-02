@@ -1,0 +1,10 @@
+{
+  "name": "theme_plugin",
+  "version": "1.0.0",
+  "description": "Provides custom themes for the IDE",
+  "author": "llama-ide Team",
+  "keywords": ["theme", "customization", "appearance"],
+  "hooks": ["startup"],
+  "routes": ["/plugins/themes"],
+  "dependencies": []
+}

@@ -1,0 +1,17 @@
+{
+  "name": "todo-tracker",
+  "version": "1.0.0",
+  "description": "Track todos and tasks within your codebase",
+  "author": "Llama IDE Team",
+  "main": "main.py",
+  "entry_point": "TodoPlugin",
+  "enabled": true,
+  "hooks": [
+    "on_file_save",
+    "on_comment_detect"
+  ],
+  "permissions": [
+    "file_read",
+    "file_write"
+  ]
+}

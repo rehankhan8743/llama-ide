@@ -1,0 +1,10 @@
+{
+  "name": "todo_plugin",
+  "version": "1.0.0",
+  "description": "Tracks TODO comments in code files",
+  "author": "llama-ide Team",
+  "keywords": ["todo", "task", "productivity"],
+  "hooks": ["file_saved", "file_opened"],
+  "routes": [],
+  "dependencies": []
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "name": "no_hardcoded_secrets",
+    "description": "Prevent hardcoded secrets in code",
+    "rules": [
+      {
+        "pattern": "(password|secret|key|token)\\s*=\\s*[\"\\'][^\"\\']{5,}[\"\\']",
+        "type": "regex"
+      }
+    ],
+    "enabled": true,
+    "created_at": "2026-04-02T17:58:38.943625",
+    "updated_at": "2026-04-02T17:58:38.943625"
+  },
+  {
+    "name": "secure_file_permissions",
+    "description": "Ensure secure file permissions",
+    "rules": [
+      {
+        "extension": ".env",
+        "permissions": "600"
+      },
+      {
+        "extension": ".key",
+        "permissions": "600"
+      }
+    ],
+    "enabled": true,
+    "created_at": "2026-04-02T17:58:38.943625",
+    "updated_at": "2026-04-02T17:58:38.943625"
+  },
+  {
+    "name": "no_eval_usage",
+    "description": "Prevent unsafe eval() usage",
+    "rules": [
+      {
+        "pattern": "\\beval\\s*\\(",
+        "type": "regex"
+      }
+    ],
+    "enabled": true,
+    "created_at": "2026-04-02T17:58:38.943625",
+    "updated_at": "2026-04-02T17:58:38.943625"
+  }
+]
